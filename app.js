@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const addTextWatermarkToImage = async function(inputFile, outputFile, text) {
   try {
-  const image = await Jimp.read(inputFile);
+    const image = await Jimp.read(inputFile);
     const font = await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK);
 
     const textData = {
